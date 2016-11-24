@@ -9,20 +9,20 @@ if (isset($_GET["logout"])) {
 	}
 
 ?>
-
-
-
 <!DOCTYPE html>
 <html>
 	
 		
 	<head>
 		<title>Data2 leht</title>
+		
+		
+		
 	</head>
 	<body>
 
 		
 			<br><br>
 			
-			<input type="submit" value ="Logi välja">
+			<a href="?logout=1"><button>Logi välja</button></a>
 </html>	
