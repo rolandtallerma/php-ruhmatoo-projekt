@@ -89,59 +89,12 @@
 	</head>
 	<body>
 
-		<h1>Logi sisse</h1>
-		<p style="color:red;"><?php echo $notice; ?></p>
-		<form method="POST">
-			
-			<label>E-post</label><br>
-			<input name="loginEmail" type="email">
-			
+		
 			<br><br>
 			
-			<label>Parool</label><br>
-			<input name="loginPassword" type="password">
-						
-			<br><br>
-			
-			<input type="submit">
+			<input type="submit" value ="Logi sisse/Registreeru">
 		
-		</form>
-		
-		<h1>Loo kasutaja</h1>
-		
-		<form method="POST">
-			
-			<label>E-post</label><br>
-			<input name="signupEmail" type="email" value="<?php echo $signupEmail; ?>" > <?php echo $signupEmailError; ?>
-			
-			<br><br>
-			
-			<input placeholder="Parool" name="signupPassword" type="password"> <?php echo $signupPasswordError; ?>
-						
-			<br><br>
-			
-			<?php if ($gender == "male") { ?>
-				<input type="radio" name="gender" value="male" checked > Mees<br>
-			<?php } else { ?>
-				<input type="radio" name="gender" value="male"> Mees<br>
-			<?php } ?>
-			
-			<?php if ($gender == "female") { ?>
-				<input type="radio" name="gender" value="female" checked > Naine<br>
-			<?php } else { ?>
-				<input type="radio" name="gender" value="female"> Naine<br>
-			<?php } ?>
-			
-			<?php if ($gender == "other") { ?>
-				<input type="radio" name="gender" value="other" checked > Muu<br>
-			<?php } else { ?>
-				<input type="radio" name="gender" value="other"> Muu<br>
-			<?php } ?>
-			
-			<input type="submit" value="Loo kasutaja">
-		
-		</form>
-       
+	
 
 
 	<br><br>   
