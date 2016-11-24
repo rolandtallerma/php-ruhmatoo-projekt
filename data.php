@@ -85,7 +85,7 @@
 	
 		
 	<head>
-		<title>Sisselogimise leht</title>
+		<title>Data leht</title>
 	</head>
 	<body>
 
@@ -144,58 +144,82 @@
        
 
 
+	<br><br>   
+		
 	    <h1> Vali linn</h>
 		
 		<select>
 	<option value="TLL">Tallinn</option>
 	<option value="TRT">Tartu</option>
-	<option value="VRU">Võru</option>
-	<option value="PRN">Pärnu</option>
+	<option value="VRU">VÃµru</option>
+	<option value="PRN">PÃ¤rnu</option>
 	<option value="NR">Narva</option>
-	<option value="KJ">Kohtla-Järve</option>
+	<option value="KJ">Kohtla-JÃ¤rve</option>
 	<option value="VLJ">Viljandi</option>
 	<option value="RKR">Rakvere</option>
-	<option value="SLM">Sillamäe</option>
+	<option value="SLM">SillamÃ¤e</option>
 	<option value="KRS">Kuressaare</option>
 	<option value="VLG">Valga</option>
-	<option value="JHI">Jõhvi</option>
+	<option value="JHI">JÃµhvi</option>
 	<option value="HPS">Haapsalu</option>
 	<option value="KEI">Keila</option>
 	<option value="PAI">Paide</option>
-	<option value="TRI">Türi</option>
+	<option value="TRI">TÃ¼ri</option>
 	<option value="TPA">Tapa</option>
-	<option value="PLV">Põlva</option>
-	<option value="KVÕ">Kiviõli</option>
+	<option value="PLV">PÃµlva</option>
+	<option value="KVÃ•">KiviÃµli</option>
 	<option value="ELV">Elva</option>
 	<option value="SAU">Saue</option>
-	<option value="JGA">Jõgeva</option>
+	<option value="JGA">JÃµgeva</option>
 	<option value="RPL">Rapla</option>
-	<option value="PLT">Põltsamaa</option>
+	<option value="PLT">PÃµltsamaa</option>
 	<option value="PLD">Paldiski</option>
 	<option value="SND">Sindi</option>
 	<option value="KND">Kunda</option>
-	<option value="KRD">Kärdla</option>
+	<option value="KRD">KÃ¤rdla</option>
 	<option value="KRA">Kehra</option>
 	<option value="LKS">Loksa</option>
-	<option value="RPN">Räpina</option>
-	<option value="TRV">Tõrva</option>
-	<option value="NRJ">Narva-Jõesuu</option>
+	<option value="RPN">RÃ¤pina</option>
+	<option value="TRV">TÃµrva</option>
+	<option value="NRJ">Narva-JÃµesuu</option>
 	<option value="TMS">Tamsalu</option>
-	<option value="OTP">Otepää</option>
-	<option value="KIL">Killingi-Nõmme</option>
+	<option value="OTP">OtepÃ¤Ã¤</option>
+	<option value="KIL">Killingi-NÃµmme</option>
 	<option value="KNU">Karksi-Nuia</option>
 	<option value="LIH">Lihula</option>
 	<option value="MTV">Mustvee</option>
-	<option value="VHM">Võhma</option>
+	<option value="VHM">VÃµhma</option>
 	<option value="ANT">Antsla</option>
 	<option value="ABP">Abja-Paluoja</option>
-	<option value="PSS">Püssi</option>
+	<option value="PSS">PÃ¼ssi</option>
 	<option value="SRJ">Suure-Jaani</option>
 	<option value="KLL">Kallaste</option>
-	<option value="MSK">Mõisaküla</option>
+	<option value="MSK">MÃµisakÃ¼la</option>
 	
 </select>
+	<input type="submit" value="vali">
 	
+<br><br>
+
+	    <h1> Vali SÃ¶Ã¶gikoht</h>
+		
+		<select>
+	<option value="KAHT">Korsten, Armastus & Hea Toit </option>
+	<option value="LBRA">Leib Resto ja Aed</option>
+	<option value="MSHA">Masha</option>
+	<option value="ARGE">Argentiina</option>
+	<option value="SPOT">Spot</option>
+	<option value="CULC">Cubanita Live Cafe</option>
+	<option value="VLJ">Lusikas</option>
+	<option value="PLTZ">Platz</option>
+	
+	
+</select>
+	<input type="submit" value="vali">
+	
+
+	
+
 	
 
 	
