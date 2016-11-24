@@ -1,10 +1,15 @@
 <?php
-
+	require("functions.php");
+	if(isset ($_SESSION["userId"])) {
+		
+	header("Location: login.php");
+	exit();
+	}
 	$signupEmailError = "";
 	$signupEmail = "";
 	if (isset ($_POST["signupEmail"])) {
 		if (empty ($_POST["signupEmail"])) {
-			$signupEmailError = "See väli on kohustuslik";
+			$signupEmailError = "See vÃ¤li on kohustuslik";
 		} else {
 			$signupEmail = $_POST["signupEmail"];
 		}	
@@ -12,10 +17,10 @@
 	$signupPasswordError = "";
 	if (isset ($_POST["signupPassword"])) {
 		if (empty ($_POST["signupPassword"])) {
-			$signupPasswordError = "See väli on kohustuslik";
+			$signupPasswordError = "See vÃ¤li on kohustuslik";
 		} else {
 			if (strlen ($_POST["signupPassword"]) < 8 ) {
-				$signupPasswordError = "Parool peab olema vähemalt 8 tm pikk";
+				$signupPasswordError = "Parool peab olema vÃ¤hemalt 8 tm pikk";
 			}
 		}
 	}
@@ -27,9 +32,7 @@
 		
 		echo "salvestan...<br>";
 		echo "email ".$signupEmail."<br>";
-		echo "parool ".$_POST["signupPassword"]."<br>";
 		$password = hash("sha512", $_POST["signupPassword"]);
-		echo "räsi ".$password."<br>";
 		signup($signupEmail, $password);
 	}	
 	
