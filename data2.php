@@ -1,3 +1,17 @@
+<?php
+
+if (isset($_GET["logout"])) {
+		
+		session_destroy();
+		
+		header("Location: data.php");
+		exit();
+	}
+
+?>
+
+
+
 <!DOCTYPE html>
 <html>
 	
@@ -10,5 +24,5 @@
 		
 			<br><br>
 			
-			<input type="submit" value ="Logi välja">
-		
+			<input type="submit" value ="Logi vÃ¤lja">
+</html>	
