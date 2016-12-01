@@ -7,7 +7,7 @@
 				
 		if (empty ($_POST["signupEmail"])) {
 			
-			$signupEmailError = "See v�li on kohustuslik";
+			$signupEmailError = "See väli on kohustuslik";
 			
 		} else {
 						
@@ -22,14 +22,14 @@
 		
 		if (empty ($_POST["signupPassword"])) {
 			
-			$signupPasswordError = "See v�li on kohustuslik";
+			$signupPasswordError = "See väli on kohustuslik";
 			
 		} else {
 			
 			
 			if (strlen ($_POST["signupPassword"]) < 8 ) {
 				
-				$signupPasswordError = "Parool peab olema v�hemalt 8 tm pikk";
+				$signupPasswordError = "Parool peab olema vähemalt 8 tm pikk";
 				
 			}
 			
@@ -61,7 +61,7 @@
 		
 		$password = hash("sha512", $_POST["signupPassword"]);
 		
-		echo "r�si ".$password."<br>"; 
+		echo "räsi ".$password."<br>"; 
 		
 		signup($signupEmail, $password);
 	
@@ -121,7 +121,7 @@
 	<option value="TRI">Türi</option>
 	<option value="TPA">Tapa</option>
 	<option value="PLV">Põlva</option>
-	<option value="KVÕ">Kiviõli</option>
+	<option value="KVÕ•">Kiviõli</option>
 	<option value="ELV">Elva</option>
 	<option value="SAU">Saue</option>
 	<option value="JGA">Jõgeva</option>
@@ -155,7 +155,7 @@
 	
 <br><br>
 
-	    <h1> Vali Söögikoht</h>
+	    <h1> Vali SĆ¶Ć¶gikoht</h>
 		<br><br>
 		
 		<select>
