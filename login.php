@@ -2,7 +2,7 @@
 	require("functions.php");
 	if(isset ($_SESSION["userId"])) {
 		
-	header("Location: login.php");
+	header("Location: data2.php");
 	exit();
 	}
 	$signupEmailError = "";
