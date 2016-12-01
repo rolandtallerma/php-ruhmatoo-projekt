@@ -155,7 +155,7 @@
 	
 <br><br>
 
-	    <h1> Vali SĆ¶Ć¶gikoht</h>
+	    <h1> Vali Söögikoht</h>
 		<br><br>
 		
 		<select>
