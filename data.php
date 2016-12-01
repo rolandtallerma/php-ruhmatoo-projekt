@@ -100,6 +100,7 @@
 	<br><br>   
 		
 	    <h1> Vali linn</h>
+		<br><br>
 		
 		<select>
 	<option value="TLL">Tallinn</option>
@@ -155,6 +156,7 @@
 <br><br>
 
 	    <h1> Vali Söögikoht</h>
+		<br><br>
 		
 		<select>
 	<option value="KAHT">Korsten, Armastus & Hea Toit </option>

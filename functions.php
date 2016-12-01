@@ -41,7 +41,7 @@
 				$_SESSION["userId"] = $id;
 				$_SESSION["userEmail"] = $emailFromDb;
 				
-				header("Location: data.php");
+				header("Location: data2.php");
 				exit();
 			} else {
 				$notice = "Vale parool!";
