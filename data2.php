@@ -16,68 +16,35 @@
 		
 	</head>
 	<body>
-
-		
+<!-- joosep/ Lisasin siia prooviks asjad-->
+		<font size="3"'." face='Arial'>  <!--joosep/ Lisasin siia prooviks selle rea-->
 			<br><br>
 			
 			<a href="?logout=1"><button>Logi välja</button></a>
 
 			
 <br><br>   
-		
-	    <h1> Vali linn</h>
+	<!--/joosep Lisasin siia prooviks siit vahemikust-->
+	<head>
+  <font size="2"'." face='Arial'>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>	
+
+<br><br>	
+<!--/joosep  siiani-->  
+  <h1> Vali linn</h>
 		<br><br>
 		
 		<select>
 	<option value="TLL">Tallinn</option>
-	<option value="TRT">Tartu</option>
-	<option value="VRU">Võru</option>
-	<option value="PRN">Pärnu</option>
-	<option value="NR">Narva</option>
-	<option value="KJ">Kohtla-Järve</option>
-	<option value="VLJ">Viljandi</option>
-	<option value="RKR">Rakvere</option>
-	<option value="SLM">Sillamäe</option>
-	<option value="KRS">Kuressaare</option>
-	<option value="VLG">Valga</option>
-	<option value="JHI">Jõhvi</option>
-	<option value="HPS">Haapsalu</option>
-	<option value="KEI">Keila</option>
-	<option value="PAI">Paide</option>
-	<option value="TRI">Türi</option>
-	<option value="TPA">Tapa</option>
-	<option value="PLV">Põlva</option>
-	<option value="KVÕ•">Kiviõli</option>
-	<option value="ELV">Elva</option>
-	<option value="SAU">Saue</option>
-	<option value="JGA">Jõgeva</option>
-	<option value="RPL">Rapla</option>
-	<option value="PLT">Põltsamaa</option>
-	<option value="PLD">Paldiski</option>
-	<option value="SND">Sindi</option>
-	<option value="KND">Kunda</option>
-	<option value="KRD">Kärdla</option>
-	<option value="KRA">Kehra</option>
-	<option value="LKS">Loksa</option>
-	<option value="RPN">Räpina</option>
-	<option value="TRV">Tõrva</option>
-	<option value="NRJ">Narva-Jõesuu</option>
-	<option value="TMS">Tamsalu</option>
-	<option value="OTP">Otepää</option>
-	<option value="KIL">Killingi-Nõmme</option>
-	<option value="KNU">Karksi-Nuia</option>
-	<option value="LIH">Lihula</option>
-	<option value="MTV">Mustvee</option>
-	<option value="VHM">Võhma</option>
-	<option value="ANT">Antsla</option>
-	<option value="ABP">Abja-Paluoja</option>
-	<option value="PSS">Püssi</option>
-	<option value="SRJ">Suure-Jaani</option>
-	<option value="KLL">Kallaste</option>
-	<option value="MSK">Mõisaküla</option>
+	
 	
 </select>
-	<input type="submit" value="vali">
+	<button type="button" class="btn btn-primary">Vali</button> <!--joosep/ Lisasin siia prooviks selle rea-->
 	
 <br><br>
 
@@ -96,7 +63,7 @@
 	
 	
 </select>
-	<input type="submit" value="vali">
+	<button type="button" class="btn btn-primary">Vali</button> <!--joosep/ Lisasin siia prooviks selle rea-->
 	
 
 	
