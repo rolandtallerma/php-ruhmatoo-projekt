@@ -1,13 +1,9 @@
 <?php
-
-if (isset($_GET["logout"])) {
-		
+	require("functions.php");
+	if (isset($_GET["logout"])) {
 		session_destroy();
-		
 		header("Location: data.php");
-		exit();
 	}
-
 ?>
 <!DOCTYPE html>
 <html>

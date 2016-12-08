@@ -1,5 +1,4 @@
-<?php 
-	
+<?php 	
 	$signupEmailError = "";
 	$signupEmail = "";
 		
@@ -92,7 +91,7 @@
 		
 			<br><br>
 			
-			<input type="submit" value ="Logi sisse/Registreeru">
+			<a  href="login.php" > <button>Logi sisse/Registreeru</button></a>
 		
 	
 
