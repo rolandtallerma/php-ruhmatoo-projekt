@@ -87,7 +87,8 @@
 		<title>Data leht</title>
 	</head>
 	<body>
-
+<!-- joosep/ Lisasin siia prooviks asjad-->
+		<font size="3"'." face='Arial'>  <!--joosep/ Lisasin siia prooviks selle rea-->
 		
 			<br><br>
 			
@@ -97,7 +98,18 @@
 
 
 	<br><br>   
-		
+	<!--/joosep Lisasin siia prooviks siit vahemikust-->
+	<head>
+  <font size="2"'." face='Arial'>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>	
+
+<br><br>	
+<!--/joosep  siiani-->  		
 	    <h1> Vali linn</h>
 		<br><br>
 		
@@ -106,7 +118,7 @@
 
 	
 </select>
-	<input type="submit" value="vali">
+	<button type="button" class="btn btn-primary">Vali</button> <!--joosep/ Lisasin siia prooviks selle rea-->
 	
 <br><br>
 
@@ -125,7 +137,7 @@
 	
 	
 </select>
-	<input type="submit" value="vali">
+	<button type="button" class="btn btn-primary">Vali</button> <!--joosep/ Lisasin siia prooviks selle rea-->
 	
 
 	
