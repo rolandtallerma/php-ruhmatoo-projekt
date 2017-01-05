@@ -54,4 +54,62 @@
 		
 		return $notice;
 	}
+	function soogikohad($soogikoht, $arvamus) {
+		
+		$mysqli = new mysqli($GLOBALS["serverHost"], $GLOBALS["serverUsername"],  $GLOBALS["serverPassword"],  $GLOBALS["database"]);
+
+		$stmt = $mysqli->prepare("INSERT INTO soogikohad (soogikoht, arvamus) VALUES (?, ?)");
+		echo $mysqli->error;
+		
+		$stmt->bind_param("ss", $soogikoht, $arvamus );
+
+		if ( $stmt->execute() ) {
+			echo "salvestamine õnnestus";	
+		} else {	
+			echo "ERROR ".$stmt->error;
+	}
+	
+	
+	
+	function getAllNotes() {
+		
+		$mysqli = new mysqli($GLOBALS["serverHost"], $GLOBALS["serverUsername"],  $GLOBALS["serverPassword"],  $GLOBALS["database"]);
+
+		$stmt = $mysqli->prepare("
+			SELECT id, soogikoht, arvamus
+			FROM soogikohad
+			WHERE deleted IS NULL
+		");
+		
+		$stmt->bind_result($id, $soogikoht, $arvamus);
+		$stmt->execute();
+		
+		$result = array();
+		
+		// tsükkel töötab seni, kuni saab uue rea AB'i
+		// nii mitu korda palju SELECT lausega tuli
+		while ($stmt->fetch()) {
+			//echo $note."<br>";
+			
+			$object = new StdClass();
+			$object->id = $id;
+			$object->soogikoht = $soogikoht;
+			$object->arvamus = $arvamus;
+			
+			
+			array_push($result, $object);
+			
+		}
+		
+		return $result;
+		
+	}
+	}
+	
+	
+	
+	
+	
+	
+	
 ?>
