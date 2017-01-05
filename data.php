@@ -88,7 +88,7 @@
 	</head>
 	<body>
 <!-- joosep/ Lisasin siia prooviks asjad-->
-		<font size="3"'." face='Arial'>  <!--joosep/ Lisasin siia prooviks selle rea-->
+		<font size="3"'." face='Times New Roman'>  <!--joosep/ Lisasin siia prooviks selle rea-->
 		
 			<br><br>
 			
@@ -100,7 +100,7 @@
 	<br><br>   
 	<!--/joosep Lisasin siia prooviks siit vahemikust-->
 	<head>
-  <font size="2"'." face='Arial'>
+  <font size="2"'." face='Times New Roman'>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
