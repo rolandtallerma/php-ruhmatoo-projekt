@@ -14,7 +14,7 @@
 		exit();
 	}
 	
-<<<<<<< HEAD
+
 	if (	isset($_POST["arvamus"]) && 
 			!empty($_POST["arvamus"])
 	) {
