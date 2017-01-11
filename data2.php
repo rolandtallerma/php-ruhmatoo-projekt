@@ -17,6 +17,7 @@
 	}
 
 ?>
+<h1>RestauranK</h1>
 <!DOCTYPE html>
 <html>
 	
