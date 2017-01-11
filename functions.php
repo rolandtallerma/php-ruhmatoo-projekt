@@ -54,47 +54,102 @@
 		
 		return $notice;
 	}
-	function soogikohad($soogikoht, $arvamus) {
+	function Masha($nimi, $tagasiside) {
 		
 		$mysqli = new mysqli($GLOBALS["serverHost"], $GLOBALS["serverUsername"],  $GLOBALS["serverPassword"],  $GLOBALS["database"]);
 
-		$stmt = $mysqli->prepare("INSERT INTO soogikohad (soogikoht, arvamus) VALUES (?, ?)");
+		$stmt = $mysqli->prepare("INSERT INTO Masha (nimi, tagasiside) VALUES (?, ?)");
 		echo $mysqli->error;
 		
-		$stmt->bind_param("ss", $soogikoht, $arvamus );
+		$stmt->bind_param("ss", $nimi, $tagasiside );
 
 		if ( $stmt->execute() ) {
 			echo "salvestamine õnnestus";	
 		} else {	
 			echo "ERROR ".$stmt->error;
 	}
-	
-	
-	
-	function getAllNotes() {
+	}
+	function Spot($nimi, $tagasiside) {
 		
 		$mysqli = new mysqli($GLOBALS["serverHost"], $GLOBALS["serverUsername"],  $GLOBALS["serverPassword"],  $GLOBALS["database"]);
 
-		$stmt = $mysqli->prepare("
-			SELECT id, soogikoht, arvamus
-			FROM soogikohad
+		$stmt = $mysqli->prepare("INSERT INTO Spot (nimi, tagasiside) VALUES (?, ?)");
+		echo $mysqli->error;
+		
+		$stmt->bind_param("ss", $nimi, $tagasiside );
+
+		if ( $stmt->execute() ) {
+			echo "salvestamine õnnestus";	
+		} else {	
+			echo "ERROR ".$stmt->error;
+	
+	}
+	}
+	function Argentiina($nimi, $tagasiside) {
+		
+		$mysqli = new mysqli($GLOBALS["serverHost"], $GLOBALS["serverUsername"],  $GLOBALS["serverPassword"],  $GLOBALS["database"]);
+
+		$stmt = $mysqli->prepare("INSERT INTO Argentiina (nimi, tagasiside) VALUES (?, ?)");
+		echo $mysqli->error;
+		
+		$stmt->bind_param("ss", $nimi, $tagasiside );
+
+		if ( $stmt->execute() ) {
+			echo "salvestamine õnnestus";	
+		} else {	
+			echo "ERROR ".$stmt->error;
+	
+		}
+	}
+	function getMasha() {
+		
+		$mysqli = new mysqli($GLOBALS["serverHost"], $GLOBALS["serverUsername"],  $GLOBALS["serverPassword"],  $GLOBALS["database"]);
+
+		$stmt = $mysqli->prepare("<
+			SELECT id, nimi, tagasiside
+			FROM Masha
 			WHERE deleted IS NULL
 		");
+	}
+	function getSpot() {
 		
-		$stmt->bind_result($id, $soogikoht, $arvamus);
+		$mysqli = new mysqli($GLOBALS["serverHost"], $GLOBALS["serverUsername"],  $GLOBALS["serverPassword"],  $GLOBALS["database"]);
+
+		$stmt = $mysqli->prepare("<
+			SELECT id, nimi, tagasiside
+			FROM Spot
+			WHERE deleted IS NULL
+		");
+	}
+	function getArgentiina() {
+		
+		$mysqli = new mysqli($GLOBALS["serverHost"], $GLOBALS["serverUsername"],  $GLOBALS["serverPassword"],  $GLOBALS["database"]);
+
+		$stmt = $mysqli->prepare("<
+			SELECT id, nimi, tagasiside
+			FROM Argentiina
+			WHERE deleted IS NULL
+		");
+	}
+	function cleanInput($input) {
+		$input = trim($input);
+		$input = stripslashes($input);
+		$input = htmlspecialchars($input);
+		return $input;
+		
+		
+	}
+		
+		
+		
+		$stmt->bind_result($id, $nimi, $tagasiside);
 		$stmt->execute();
-		
 		$result = array();
-		
-		// tsükkel töötab seni, kuni saab uue rea AB'i
-		// nii mitu korda palju SELECT lausega tuli
 		while ($stmt->fetch()) {
-			//echo $note."<br>";
-			
 			$object = new StdClass();
 			$object->id = $id;
-			$object->soogikoht = $soogikoht;
-			$object->arvamus = $arvamus;
+			$object->nimi = $nimi;
+			$object->tagasiside = $tagasiside;
 			
 			
 			array_push($result, $object);
@@ -103,8 +158,7 @@
 		
 		return $result;
 		
-	}
-	}
+	
 	
 	
 	
