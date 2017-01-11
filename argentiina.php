@@ -48,5 +48,7 @@
 	<br><br>
 	
 	<input type="submit">
+	
+	<a href="javascript:history.go(-1)">Tagasi</a>
 
 </form>
