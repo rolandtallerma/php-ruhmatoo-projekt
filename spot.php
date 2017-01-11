@@ -46,7 +46,7 @@
 	<br><br>
 	
 	<label>Tagasiside</label><br>
-	<input name="tagasiside" type="text">
+	<input name="tagasiside" type="text" input style="height:200px">
 				
 	<br><br>
 	
