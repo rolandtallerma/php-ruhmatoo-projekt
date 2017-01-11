@@ -12,6 +12,10 @@
 		exit();
 	}
 	
+	if (isset($_GET["tagasi"])) {
+		header("Location: data2.php");
+	}
+	
 	if (	isset($_POST["nimi"]) && 
 			isset($_POST["tagasiside"]) && 
 			!empty($_POST["nimi"]) && 
@@ -48,5 +52,8 @@
 	<br><br>
 	
 	<input type="submit">
+	
+	
+	<a href="?tagasi=1"><button>Tagasi</button></a>
 
 </form>

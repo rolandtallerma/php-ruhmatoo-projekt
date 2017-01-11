@@ -3,8 +3,22 @@
 	if (isset($_GET["logout"])) {
 		session_destroy();
 		header("Location: data.php");
+		}
+		
+	if (isset($_GET["masha"])) {
+		header("Location: masha.php");
 	}
+	
+	if (isset($_GET["argentiina"])) {
+		header("Location: argentiina.php");
+	}
+	if (isset($_GET["spot"])) {
+		header("Location: spot.php");
+	}	
+		
+		
 ?>
+
 <!DOCTYPE html>
 <html>
 	
@@ -66,7 +80,9 @@
 	<button type="button" class="btn btn-primary btn-sm">Vali</button> <!--joosep/ Lisasin siia prooviks selle rea-->
 	
 
-	
+	<a href="?spot=1"><button>Spot</button></a>
+	<a href="?masha=1"><button>Masha</button></a>
+	<a href="?argentiina=1"><button>Argentiina</button></a>
 
 	
 
