@@ -53,4 +53,4 @@
 	<input type="submit">
 	
 	
-	<a href="?tagasi=1"><button>Tagasi</button></a>
+	<a href="javascript:history.go(-1)">Tagasi</a>
