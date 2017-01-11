@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 <?php
 	require("functions.php");
 	if (isset($_GET["logout"])) {
@@ -47,36 +46,7 @@
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 </head>	
 
-<br><br>	
-<!--/joosep  siiani-->  
-  <h1> Vali linn</h>
-		<br><br>
-		
-		<select>
-	<option value="TLL">Tallinn</option>
-	
-	
-</select>
-	<button type="button" class="btn btn-primary btn-sm">Vali</button> <!--joosep/ Lisasin siia prooviks selle rea-->
-	
-<br><br>
 
-	    <h1> Vali Söögikoht</h>
-		<br><br>
-		
-		<select>
-	<option value="KAHT">Korsten, Armastus & Hea Toit </option>
-	<option value="LBRA">Leib Resto ja Aed</option>
-	<option value="MSHA">Masha</option>
-	<option value="ARGE">Argentiina</option>
-	<option value="SPOT">Spot</option>
-	<option value="CULC">Cubanita Live Cafe</option>
-	<option value="VLJ">Lusikas</option>
-	<option value="PLTZ">Platz</option>
-	
-	
-</select>
-	<button type="button" class="btn btn-primary btn-sm">Vali</button> <!--joosep/ Lisasin siia prooviks selle rea-->
     
 
 	<a href="?masha=1"><button>Masha</button></a>
