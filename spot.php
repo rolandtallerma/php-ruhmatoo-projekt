@@ -14,7 +14,6 @@
 	
 	if (isset($_GET["tagasi"])) {
 		header("Location: data2.php");
-		exit();
 	}
 	
 	if (	isset($_POST["nimi"]) && 
@@ -36,7 +35,6 @@
 
 <h1>Spot</h1>
 <p>
-	Tere tulemast <a href="user.php"><?=$_SESSION["userEmail"];?></a>!
 	<a href="?logout=1">Logi välja</a>
 </p>
 <h2><i>Tagasiside</i></h2>
@@ -55,4 +53,4 @@
 	<input type="submit">
 	
 	
-	<a href="javascript:history.go(-1)">Tagasi</a>
+	<a href="?tagasi=1"><button>Tagasi</button></a>

@@ -17,7 +17,7 @@
 	}
 
 ?>
-<h1>RestauranK</h1>
+<h1>RestauRank</h1>
 <!DOCTYPE html>
 <html>
 	

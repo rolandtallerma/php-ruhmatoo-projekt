@@ -10,7 +10,7 @@
 
 ?>
 
-<h1>RestauranK</h1>
+<h1>RestauRank</h1>
 <p>
 	<h2>Tere tulemast!<h2> 
 </p>
@@ -39,10 +39,13 @@
 	</body>
 </html>
 
+
+
+
+<p>
+	<h3>MASHA<h3> 
+</p>
 <?php
-
-
-
 	$html = "<table>";
 		$html .= "<tr>";
 			$html .= "<th>id</th>";
@@ -69,8 +72,13 @@
 	$html .="</table>";
 
 	echo $html;
-	
-	
+?>
+<p>
+<br>
+	<h3>ARGENTIINA<h3> 
+</p>
+
+<?php	
 		$html = "<table>";
 	
 		$html .= "<tr>";
@@ -95,9 +103,18 @@
 		
 	}
 	
+
 	$html .="</table>";
 
 	echo $html;
+	
+?>
+<p>
+<br>
+	<h3>SPOT<h3> 
+</p>
+
+<?php
 
 			$html = "<table>";
 	
