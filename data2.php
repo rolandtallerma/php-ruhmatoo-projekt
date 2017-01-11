@@ -20,7 +20,7 @@
 		<font size="3"'." face='Times New Roman'>  <!--joosep/ Lisasin siia prooviks selle rea-->
 			<br><br>
 			
-			<a href="?logout=1"><button>Logi vÃ¤lja</button></a>
+			<a href="?logout=1"><button>Logi välja</button></a>
 
 			
 <br><br>   
@@ -48,7 +48,7 @@
 	
 <br><br>
 
-	    <h1> Vali SÃ¶Ã¶gikoht</h>
+	    <h1> Vali Söögikoht</h>
 		<br><br>
 		
 		<select>
