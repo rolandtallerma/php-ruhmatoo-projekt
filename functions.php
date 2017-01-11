@@ -18,7 +18,7 @@
 			echo "ERROR ".$stmt->error;
 		}
 		
-	}
+		}
 	function login($email, $password) {
 		$notice = "";
 		$mysqli = new mysqli($GLOBALS["serverHost"], $GLOBALS["serverUsername"],  $GLOBALS["serverPassword"],  $GLOBALS["database"]);
@@ -53,7 +53,7 @@
 		}
 		
 		return $notice;
-	}
+		}
 	function Masha($nimi, $tagasiside) {
 		
 		$mysqli = new mysqli($GLOBALS["serverHost"], $GLOBALS["serverUsername"],  $GLOBALS["serverPassword"],  $GLOBALS["database"]);
@@ -67,8 +67,8 @@
 			echo "salvestamine õnnestus";	
 		} else {	
 			echo "ERROR ".$stmt->error;
-	}
-	}
+		}
+		}
 	function Spot($nimi, $tagasiside) {
 		
 		$mysqli = new mysqli($GLOBALS["serverHost"], $GLOBALS["serverUsername"],  $GLOBALS["serverPassword"],  $GLOBALS["database"]);
@@ -83,8 +83,8 @@
 		} else {	
 			echo "ERROR ".$stmt->error;
 	
-	}
-	}
+		}
+		}
 	function Argentiina($nimi, $tagasiside) {
 		
 		$mysqli = new mysqli($GLOBALS["serverHost"], $GLOBALS["serverUsername"],  $GLOBALS["serverPassword"],  $GLOBALS["database"]);
@@ -100,7 +100,7 @@
 			echo "ERROR ".$stmt->error;
 	
 		}
-	}
+		}
 	function getMasha() {
 		
 		$mysqli = new mysqli($GLOBALS["serverHost"], $GLOBALS["serverUsername"],  $GLOBALS["serverPassword"],  $GLOBALS["database"]);
@@ -110,6 +110,19 @@
 			FROM Masha
 			WHERE deleted IS NULL
 		");
+		$stmt->bind_result($id, $nimi, $tagasiside);
+		$stmt->execute();
+		$result = array();
+		while ($stmt->fetch()) {
+			$object = new StdClass();
+			$object->id = $id;
+			$object->nimi = $nimi;
+			$object->tagasiside = $tagasiside;
+			array_push($result, $object);
+			
+		}
+		return $result;
+		
 	}
 	function getSpot() {
 		
@@ -120,7 +133,20 @@
 			FROM Spot
 			WHERE deleted IS NULL
 		");
-	}
+		$stmt->bind_result($id, $nimi, $tagasiside);
+		$stmt->execute();
+		$result = array();
+		while ($stmt->fetch()) {
+			$object = new StdClass();
+			$object->id = $id;
+			$object->nimi = $nimi;
+			$object->tagasiside = $tagasiside;
+			array_push($result, $object);
+			
+		}
+		return $result;
+		
+		}
 	function getArgentiina() {
 		
 		$mysqli = new mysqli($GLOBALS["serverHost"], $GLOBALS["serverUsername"],  $GLOBALS["serverPassword"],  $GLOBALS["database"]);
@@ -130,18 +156,6 @@
 			FROM Argentiina
 			WHERE deleted IS NULL
 		");
-	}
-	function cleanInput($input) {
-		$input = trim($input);
-		$input = stripslashes($input);
-		$input = htmlspecialchars($input);
-		return $input;
-		
-		
-	}
-		
-		
-		
 		$stmt->bind_result($id, $nimi, $tagasiside);
 		$stmt->execute();
 		$result = array();
@@ -150,13 +164,26 @@
 			$object->id = $id;
 			$object->nimi = $nimi;
 			$object->tagasiside = $tagasiside;
-			
-			
 			array_push($result, $object);
 			
 		}
-		
 		return $result;
+		}
+	function cleanInput($input) {
+		$input = trim($input);
+		$input = stripslashes($input);
+		$input = htmlspecialchars($input);
+		return $input;
+		
+		
+		}
+		
+		
+		
+		
+		
+		
+		
 		
 	
 	
