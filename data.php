@@ -9,6 +9,11 @@
 
 
 ?>
+
+<h1>(Project name)</h1>
+<p>
+	<h2>Tere tulemast!<h2> 
+</p>
 <!DOCTYPE html>
 <html>
 	
@@ -35,6 +40,7 @@
 </html>
 
 <?php
+
 
 
 	$html = "<table>";
