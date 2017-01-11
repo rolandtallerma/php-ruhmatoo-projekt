@@ -10,7 +10,7 @@
 
 ?>
 
-<h1>RestauranK</h1>
+<h1>RestauRank</h1>
 <p>
 	<h2>Tere tulemast!<h2> 
 </p>
