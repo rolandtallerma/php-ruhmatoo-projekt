@@ -44,7 +44,6 @@
 
 
 	$html = "<table>";
-	
 		$html .= "<tr>";
 			$html .= "<th>id</th>";
 			$html .= "<th>nimi</th>";
