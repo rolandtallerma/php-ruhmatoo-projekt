@@ -89,7 +89,7 @@
 		
 		$mysqli = new mysqli($GLOBALS["serverHost"], $GLOBALS["serverUsername"],  $GLOBALS["serverPassword"],  $GLOBALS["database"]);
 
-		$stmt = $mysqli->prepare("INSERT INTO Argentiina (nimi, tagasiside) VALUES (?, ?)");
+		$stmt = $mysqli->prepare("INSERT INTO Argentiina(nimi, tagasiside) VALUES (?, ?)");
 		echo $mysqli->error;
 		
 		$stmt->bind_param("ss", $nimi, $tagasiside );
@@ -105,70 +105,96 @@
 		
 		$mysqli = new mysqli($GLOBALS["serverHost"], $GLOBALS["serverUsername"],  $GLOBALS["serverPassword"],  $GLOBALS["database"]);
 
-		$stmt = $mysqli->prepare("<
+		$stmt = $mysqli->prepare("
 			SELECT id, nimi, tagasiside
 			FROM Masha
-			WHERE deleted IS NULL
+			Where deleted IS NULL
 		");
+		
 		$stmt->bind_result($id, $nimi, $tagasiside);
 		$stmt->execute();
+		
 		$result = array();
+		
 		while ($stmt->fetch()) {
+			//echo $note."<br>";
+			
 			$object = new StdClass();
 			$object->id = $id;
 			$object->nimi = $nimi;
 			$object->tagasiside = $tagasiside;
+			
 			array_push($result, $object);
 			
 		}
+		
 		return $result;
 		
 	}
+	
+	
 	function getSpot() {
 		
 		$mysqli = new mysqli($GLOBALS["serverHost"], $GLOBALS["serverUsername"],  $GLOBALS["serverPassword"],  $GLOBALS["database"]);
 
-		$stmt = $mysqli->prepare("<
+		$stmt = $mysqli->prepare("
 			SELECT id, nimi, tagasiside
 			FROM Spot
-			WHERE deleted IS NULL
+			Where deleted IS NULL
 		");
+		
 		$stmt->bind_result($id, $nimi, $tagasiside);
 		$stmt->execute();
+		
 		$result = array();
+		
 		while ($stmt->fetch()) {
+			//echo $note."<br>";
+			
 			$object = new StdClass();
 			$object->id = $id;
 			$object->nimi = $nimi;
 			$object->tagasiside = $tagasiside;
+			
 			array_push($result, $object);
 			
 		}
+		
 		return $result;
 		
-		}
+	}
+	
 	function getArgentiina() {
 		
 		$mysqli = new mysqli($GLOBALS["serverHost"], $GLOBALS["serverUsername"],  $GLOBALS["serverPassword"],  $GLOBALS["database"]);
 
-		$stmt = $mysqli->prepare("<
+		$stmt = $mysqli->prepare("
 			SELECT id, nimi, tagasiside
 			FROM Argentiina
-			WHERE deleted IS NULL
+			Where deleted IS NULL
 		");
+		
 		$stmt->bind_result($id, $nimi, $tagasiside);
 		$stmt->execute();
+		
 		$result = array();
+		
 		while ($stmt->fetch()) {
+			//echo $note."<br>";
+			
 			$object = new StdClass();
 			$object->id = $id;
 			$object->nimi = $nimi;
 			$object->tagasiside = $tagasiside;
+			
 			array_push($result, $object);
 			
 		}
+		
 		return $result;
-		}
+		
+	}
+	
 	function cleanInput($input) {
 		$input = trim($input);
 		$input = stripslashes($input);
