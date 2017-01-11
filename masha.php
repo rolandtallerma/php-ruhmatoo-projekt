@@ -25,8 +25,28 @@
 		
 	}
 	$mashad = getMasha();
-	//echo "<pre>";
-	//var_dump($notes);
-	//echo "</pre>";
 
 ?>
+
+
+<h1>Masha</h1>
+<p>
+	Tere tulemast <a href="user.php"><?=$_SESSION["userEmail"];?></a>!
+	<a href="?logout=1">Logi välja</a>
+</p>
+<h2><i>Tagasiside</i></h2>
+<form method="POST">
+			
+	<label>Nimi</label><br>
+	<input name="nimi" type="text">
+	
+	<br><br>
+	
+	<label>Tagasiside</label><br>
+	<input name="tagasiside" type="text">
+				
+	<br><br>
+	
+	<input type="submit">
+
+</form>
