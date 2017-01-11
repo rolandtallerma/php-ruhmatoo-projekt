@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 <?php 
 	// et saada ligi sessioonile
 	require("functions.php");
@@ -14,7 +14,6 @@
 		header("Location: data.php");
 		exit();
 	}
-
 	if (	isset($_POST["arvamus"]) && 
 			!empty($_POST["arvamus"])
 	) {
@@ -193,7 +192,6 @@
 		
 		<select class="first">
 	<option value="TLL">Tallinn</option>
->>>>>>> e85dea9ca7279e1a15b0975fda9e6a613249b824
 	
 	<br><br>
 	
@@ -209,8 +207,6 @@
 
 <h2 style="clear:both;">Arvamused</h2>
 
-<<<<<<< HEAD
-=======
 	    <h1> Vali Söögikoht</h1>
 		<br><br>
 		
@@ -228,8 +224,3 @@
 </select>
 	<button type="button" class="btn btn-primary btn-sm">Vali</button> <!--joosep/ Lisasin siia prooviks selle rea-->
 	
->>>>>>> e85dea9ca7279e1a15b0975fda9e6a613249b824
-
-
-
->>>>>>> edde8a8b6c9c8966b7c0ebc5fa5435899f93184d
