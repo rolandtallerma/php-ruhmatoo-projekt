@@ -14,6 +14,7 @@
 	
 	if (isset($_GET["tagasi"])) {
 		header("Location: data2.php");
+		exit();
 	}
 	
 	if (	isset($_POST["nimi"]) && 
@@ -54,4 +55,4 @@
 	<input type="submit">
 	
 	
-	<a href="?tagasi=1"><button>Tagasi</button></a>
+	<a href="javascript:history.go(-1)">Tagasi</a>
