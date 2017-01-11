@@ -39,10 +39,13 @@
 	</body>
 </html>
 
+
+
+
+<p>
+	<h3>MASHA<h3> 
+</p>
 <?php
-
-
-
 	$html = "<table>";
 	
 		$html .= "<tr>";
@@ -70,8 +73,13 @@
 	$html .="</table>";
 
 	echo $html;
-	
-	
+?>
+<p>
+<br>
+	<h3>ARGENTIINA<h3> 
+</p>
+
+<?php	
 		$html = "<table>";
 	
 		$html .= "<tr>";
@@ -96,9 +104,18 @@
 		
 	}
 	
+
 	$html .="</table>";
 
 	echo $html;
+	
+?>
+<p>
+<br>
+	<h3>SPOT<h3> 
+</p>
+
+<?php
 
 			$html = "<table>";
 	
