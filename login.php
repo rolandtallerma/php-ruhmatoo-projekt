@@ -66,20 +66,20 @@
 <html>
 <body style="background-color:lightskyblue;">
 	<head>
-		<title>Sisselogimise leht</title>
+		<title style="font-family:Times New Roman;">Sisselogimise leht</title>
 	</head>
 	<body>
 
-		<h1>Logi sisse</h1>
+		<h1 style="font-family:Times New Roman;">Logi sisse</h1>
 		<p style="color:red;"><?php echo $notice; ?></p>
 		<form method="POST">
 			
-			<label>E-post</label><br>
+			<label style="font-family:Times New Roman;">E-post</label><br>
 			<input name="loginEmail" type="email">
 			
 			<br><br>
 			
-			<label>Parool</label><br>
+			<label style="font-family:Times New Roman;">Parool</label><br>
 			<input name="loginPassword" type="password">
 						
 			<br><br>
@@ -89,11 +89,11 @@
 		
 		</form>
 		
-				<h1>Loo kasutaja</h1>
+				<h1 style="font-family:Times New Roman;">Loo kasutaja</h1>
 		
 		<form method="POST">
 			
-			<label>E-post</label><br>
+			<label style="font-family:Times New Roman;">E-post</label><br>
 			<input name="signupEmail" type="email" value="<?=$signupEmail;?>" > <?php echo $signupEmailError; ?>
 			
 			<br><br>
