@@ -17,9 +17,14 @@
 	}
 
 ?>
-<h1>RestauRank</h1>
+
+<h1 style="font-family:Times New Roman;">R e s t a u R a n k</h1>
+<h2 style="font-family:Times New Roman;">TERE TULEMAST!</h2>
+<br><br>
+<h3 style="font-family:Times New Roman;">Vali sobiv söögikoht:</h3> 
 <!DOCTYPE html>
 <html>
+<body style="background-color:lightskyblue;">
 	
 		
 	<head>
@@ -31,9 +36,12 @@
 	<body>
 <!-- joosep/ Lisasin siia prooviks asjad-->
 		<font size="3"'." face='Times New Roman'>  <!--joosep/ Lisasin siia prooviks selle rea-->
-			<br><br>
+		
 			
-			<a href="?logout=1"><button>Logi välja</button></a>
+			
+			
+			
+			
 
 			
 <br><br>   
@@ -48,17 +56,21 @@
 </head>	
 
 
-    
-
-	<a href="?masha=1"><button>Masha</button></a>
-	<a href="?spot=1"><button>Spot</button></a>
-	<a href="?argentiina=1"><button>Argentiina</button></a>
+    <a  href="?masha=1"><button> Masha</button></a>
+	<a  href="?spot=1"><button> Spot</button></a>
+	<a  href="?argentiina=1"><button> Argentiina</button></a>
+	
+	
 	
 
+	<p>
+	<br><br>  
 	
+	<a  href="?logout=1"><button> Logi välja</button></a>
 
 	
 	</body>
+
 
 
 

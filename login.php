@@ -64,6 +64,7 @@
 
 <!DOCTYPE html>
 <html>
+<body style="background-color:lightskyblue;">
 	<head>
 		<title>Sisselogimise leht</title>
 	</head>
@@ -83,7 +84,8 @@
 						
 			<br><br>
 			
-			<input type="submit">
+			
+			<a  href="submit" value="Logi sisse"><button> Logi sisse</button></a>
 		
 		</form>
 		
@@ -100,5 +102,16 @@
 						
 			<br><br>
 			
-			<input type="submit" value="Loo kasutaja">
+			<a  href="submit" value="Loo kasutaja"><button> Loo kasutaja</button></a>
+		
+			
+			 <font size="3"'." face='Times New Roman'>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>	
+			
+			
 </html>
